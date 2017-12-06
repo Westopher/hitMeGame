@@ -33,18 +33,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func whoIsThereButton(_ sender: Any) {
-        
-        let whoIsThereAlert = UIAlertController(title: "Who's there?", message: nil, preferredStyle: .alert)
-        
-        let whoIsThereAction = UIAlertAction(title: "Haha", style: .default, handler: nil)
-        
-        whoIsThereAlert.addAction(whoIsThereAction)
-        
-        present(whoIsThereAlert, animated: true, completion: nil)
-        
-    }
-    
 }
 
 
