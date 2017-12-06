@@ -109,6 +109,7 @@
                     </view>
                     <connections>
                         <outlet property="number" destination="c0k-dA-ldw" id="I65-r7-2xz"/>
+                        <outlet property="targetLabel" destination="hZD-Gu-cVs" id="vZW-7Q-gbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
