@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sliderMoved(_ number: UISlider) {
+        print("The value of the slider is now: \(number.value)")
+    }
+    
     @IBAction func showAlert() {
         
         let alert = UIAlertController(title: "Hello, World", message: "This is an app", preferredStyle: .alert)
