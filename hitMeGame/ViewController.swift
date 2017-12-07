@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var currentValue: Int = 0
+    var currentValue = 0
     @IBOutlet weak var number: UISlider!
-    var targetValue: Int = 0
+    var targetValue = 0
     @IBOutlet weak var targetLabel: UILabel!
+    var score = 0
+    @IBOutlet weak var scoreValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +27,16 @@ class ViewController: UIViewController {
         targetLabel.text = String(targetValue)
     }
     
+    func updateScore() {
+        scoreValue.text = String(score)
+    }
+    
     func startNewRound() {
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 50
         number.value = Float(currentValue)
         updateLabels()
+        updateScore()
     }
     
 
@@ -45,17 +52,12 @@ class ViewController: UIViewController {
     
     @IBAction func showAlert() {
         
-        var difference: Int
+        let difference = abs(currentValue - targetValue)
+        let points = 100 - difference
+      
+        score += points // score = score + points
         
-        if currentValue > targetValue {
-            difference = currentValue - targetValue
-        } else if targetValue > currentValue {
-            difference = targetValue - currentValue
-        } else {
-            difference = 0
-        }
-        
-        let message = "The value of the slider is: \(currentValue)" + "\nThe target value is: \(targetValue)" + "\nThe difference is \(difference)"
+        let message = "You scored \(points) points"
         let alert = UIAlertController(title: "Hit Me Game", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
