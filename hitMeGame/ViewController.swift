@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             difference = 0
         }
         
-        let message = "The value of the slider is: \(currentValue)" + "\nThe target value is: \(targetValue) + \nThe difference is \(difference)"
+        let message = "The value of the slider is: \(currentValue)" + "\nThe target value is: \(targetValue)" + "\nThe difference is \(difference)"
         let alert = UIAlertController(title: "Hit Me Game", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
