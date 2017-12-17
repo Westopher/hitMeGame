@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D37707A1FE707F60027E998 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3770791FE707F60027E998 /* AboutViewController.swift */; };
 		3D9B5EF11FD07FBF00FFC201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9B5EF01FD07FBF00FFC201 /* AppDelegate.swift */; };
 		3D9B5EF31FD07FBF00FFC201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9B5EF21FD07FBF00FFC201 /* ViewController.swift */; };
 		3D9B5EF61FD07FBF00FFC201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9B5EF41FD07FBF00FFC201 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3770791FE707F60027E998 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		3D9B5EED1FD07FBF00FFC201 /* hitMeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hitMeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9B5EF01FD07FBF00FFC201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9B5EF21FD07FBF00FFC201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				3D9B5EF01FD07FBF00FFC201 /* AppDelegate.swift */,
 				3D9B5EF21FD07FBF00FFC201 /* ViewController.swift */,
 				3D9B5EF41FD07FBF00FFC201 /* Main.storyboard */,
+				3D3770791FE707F60027E998 /* AboutViewController.swift */,
 				3D9B5EF71FD07FBF00FFC201 /* Assets.xcassets */,
 				3D9B5EF91FD07FBF00FFC201 /* LaunchScreen.storyboard */,
 				3D9B5EFC1FD07FBF00FFC201 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D37707A1FE707F60027E998 /* AboutViewController.swift in Sources */,
 				3D9B5EF31FD07FBF00FFC201 /* ViewController.swift in Sources */,
 				3D9B5EF11FD07FBF00FFC201 /* AppDelegate.swift in Sources */,
 			);
