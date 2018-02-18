@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -176,13 +177,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kFP-AT-Cnb">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kFP-AT-Cnb">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-dV-3pU">
-                                <rect key="frame" x="275" y="247" width="189" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-dV-3pU">
+                                <rect key="frame" x="481" y="318" width="166" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="About the Author" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.36499452590942383" green="0.17146891355514526" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -191,9 +190,8 @@
                                     <segue destination="nhh-IZ-wM5" kind="presentation" id="ANr-EE-H4T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-Z1-JBW">
-                                <rect key="frame" x="16" y="247" width="108" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-Z1-JBW">
+                                <rect key="frame" x="305.5" y="318" width="56" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37647058823529411" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,15 +200,26 @@
                                     <action selector="close" destination="YgV-Sj-9Es" eventType="touchUpInside" id="dq7-Ll-xzY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is an app I made to learn more about Swift and xCode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3k-it-G3l">
-                                <rect key="frame" x="1" y="68" width="476" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an app I made to learn more about Swift and xCode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3k-it-G3l">
+                                <rect key="frame" x="123.5" y="178.5" width="420" height="18"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F3k-it-G3l" firstAttribute="centerY" secondItem="k8x-UP-jFO" secondAttribute="centerY" id="1Np-dU-r9f"/>
+                            <constraint firstItem="TJa-jv-IrB" firstAttribute="bottom" secondItem="Gsr-dV-3pU" secondAttribute="bottom" constant="20" id="2JM-Hg-KYE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2Iy-Z1-JBW" secondAttribute="bottom" constant="20" id="6fg-RC-ff0"/>
+                            <constraint firstItem="kFP-AT-Cnb" firstAttribute="top" secondItem="k8x-UP-jFO" secondAttribute="top" id="DSS-ib-ggr"/>
+                            <constraint firstAttribute="bottom" secondItem="kFP-AT-Cnb" secondAttribute="bottom" id="DW3-Xe-P1b"/>
+                            <constraint firstItem="kFP-AT-Cnb" firstAttribute="leading" secondItem="k8x-UP-jFO" secondAttribute="leading" id="FRG-TQ-8yT"/>
+                            <constraint firstAttribute="trailing" secondItem="kFP-AT-Cnb" secondAttribute="trailing" id="KIt-eb-xS3"/>
+                            <constraint firstItem="2Iy-Z1-JBW" firstAttribute="centerX" secondItem="k8x-UP-jFO" secondAttribute="centerX" id="ceV-5u-JMX"/>
+                            <constraint firstItem="F3k-it-G3l" firstAttribute="centerX" secondItem="k8x-UP-jFO" secondAttribute="centerX" id="uqi-hq-GeS"/>
+                            <constraint firstItem="TJa-jv-IrB" firstAttribute="trailing" secondItem="Gsr-dV-3pU" secondAttribute="trailing" constant="20" id="wYK-1a-wij"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TJa-jv-IrB"/>
                     </view>
                 </viewController>
